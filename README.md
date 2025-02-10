@@ -1,10 +1,9 @@
 # Simple Calculator 
 A Clean GUI Calculator with Minimal Features for Windows
-
-## Screenshot
 <p align="center">
-  <img src="CalculatorWPF/CalculatorWPF/Screenshots/normal.png" />
+  <img src="CalculatorWPF/CalculatorWPF/icon.png" />
 </p>
+
 
 ## Requirements
 
@@ -17,7 +16,15 @@ A Clean GUI Calculator with Minimal Features for Windows
 - Keyboard Support
 - Easy to Use
   
-## Responsive
+## Screenshot
+<p align="center">
+  <img src="CalculatorWPF/CalculatorWPF/Screenshots/normal.png" />
+</p>
 <p align="center">
   <img src="CalculatorWPF/CalculatorWPF/Screenshots/wide.png" />
 </p>
+
+
+## Contributing
+
+Contributions are always welcome!
