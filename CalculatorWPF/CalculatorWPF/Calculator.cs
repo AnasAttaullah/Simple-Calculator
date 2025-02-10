@@ -9,7 +9,7 @@ using System.Windows;
 
 namespace CalculatorWPF
 {
-    public class Calculator_logic
+    public class Calculator
     {
         public static List<Double> Values = new List<Double>();
         public static Nullable<Char> Op;

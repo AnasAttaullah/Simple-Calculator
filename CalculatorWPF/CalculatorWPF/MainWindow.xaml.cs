@@ -59,20 +59,20 @@ namespace CalculatorWPF
                 primary_input += op;
                 Primary_display.Clear();
                 Secondary_display.Clear();
-                Calculator_logic.Parser(primary_input);
+                Calculator.Parser(primary_input);
                 primary_input = "Invalid Input";
                 // evaluate when list has two numbers
-                if (Calculator_logic.Values.Count == 2)
+                if (Calculator.Values.Count == 2)
                 {
-                    Calculator_logic.Evaluate();
+                    Calculator.Evaluate();
                 }
-                if (Calculator_logic.Values.Count > 0)
+                if (Calculator.Values.Count > 0)
                 {
-                    Secondary_display.Text = $"{Calculator_logic.Values[0]} {Calculator_logic.Op}";
+                    Secondary_display.Text = $"{Calculator.Values[0]} {Calculator.Op}";
                 }
                 if (op == "%")
                 {
-                    primary_input = Calculator_logic.Values[0].ToString();
+                    primary_input = Calculator.Values[0].ToString();
                 }
                 else
                 {
@@ -84,22 +84,22 @@ namespace CalculatorWPF
         // Method for Equal Button Logic 
         public void EqualButtonLogic()
         {
-            if (Calculator_logic.Values.Count > 0 && primary_input != "")
+            if (Calculator.Values.Count > 0 && primary_input != "")
             {
                 Primary_display.Clear();
                 Secondary_display.Clear();
-                if (Calculator_logic.Values.Count == 2)
+                if (Calculator.Values.Count == 2)
                 {
-                    Calculator_logic.Evaluate();
+                    Calculator.Evaluate();
                 }
                 else
                 {
-                    Calculator_logic.Parser(primary_input);
-                    Calculator_logic.Evaluate();
+                    Calculator.Parser(primary_input);
+                    Calculator.Evaluate();
                 }
-                Primary_display.Text += Calculator_logic.Values[0].ToString();
-                primary_input = Calculator_logic.Values[0].ToString();
-                Calculator_logic.Values.Clear();
+                Primary_display.Text += Calculator.Values[0].ToString();
+                primary_input = Calculator.Values[0].ToString();
+                Calculator.Values.Clear();
             }
         }
 
@@ -111,7 +111,7 @@ namespace CalculatorWPF
             Primary_display.Clear();
             Secondary_display.Clear();
             primary_input = "";
-            Calculator_logic.Values.Clear();
+            Calculator.Values.Clear();
         }
         private void Del_buttonClicked(object sender, RoutedEventArgs e)
         {
@@ -133,9 +133,9 @@ namespace CalculatorWPF
             Primary_display.Clear();
             if (Check_last())
             {
-                Primary_display.Text = Calculator_logic.Values[0].ToString();
+                Primary_display.Text = Calculator.Values[0].ToString();
             }
-            Calculator_logic.Values.Clear();
+            Calculator.Values.Clear();
 
         }
         private void Division_buttonClicked(object sender, RoutedEventArgs e)
@@ -288,7 +288,7 @@ namespace CalculatorWPF
             {
                 primary_input = "";
                 Secondary_display.Clear();
-                Calculator_logic.Values.Clear();
+                Calculator.Values.Clear();
                 e.Handled = true;
             }
             // Handling backspace

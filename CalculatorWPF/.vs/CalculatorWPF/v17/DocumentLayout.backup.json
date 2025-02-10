@@ -1,30 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\dsfsdfsdf\\CalculatorWPF\\",
+  "WorkspaceRootPath": "D:\\Sync\\C# code\\PROJECTS\\Calculator\\Simple-Calculator\\CalculatorWPF\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{85819FE9-4ADB-44BA-915A-D81AF16951C1}|CalculatorWPF\\CalculatorWPF.csproj|d:\\dsfsdfsdf\\calculatorwpf\\calculatorwpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{85819FE9-4ADB-44BA-915A-D81AF16951C1}|CalculatorWPF\\CalculatorWPF.csproj|solutionrelative:calculatorwpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85819FE9-4ADB-44BA-915A-D81AF16951C1}|CalculatorWPF\\CalculatorWPF.csproj|d:\\dsfsdfsdf\\calculatorwpf\\calculatorwpf\\calculatorwpf.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{85819FE9-4ADB-44BA-915A-D81AF16951C1}|CalculatorWPF\\CalculatorWPF.csproj|solutionrelative:calculatorwpf\\calculatorwpf.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85819FE9-4ADB-44BA-915A-D81AF16951C1}|CalculatorWPF\\CalculatorWPF.csproj|d:\\dsfsdfsdf\\calculatorwpf\\calculatorwpf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{85819FE9-4ADB-44BA-915A-D81AF16951C1}|CalculatorWPF\\CalculatorWPF.csproj|solutionrelative:calculatorwpf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85819FE9-4ADB-44BA-915A-D81AF16951C1}|CalculatorWPF\\CalculatorWPF.csproj|d:\\dsfsdfsdf\\calculatorwpf\\calculatorwpf\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85819FE9-4ADB-44BA-915A-D81AF16951C1}|CalculatorWPF\\CalculatorWPF.csproj|solutionrelative:calculatorwpf\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85819FE9-4ADB-44BA-915A-D81AF16951C1}|CalculatorWPF\\CalculatorWPF.csproj|d:\\dsfsdfsdf\\calculatorwpf\\calculatorwpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{85819FE9-4ADB-44BA-915A-D81AF16951C1}|CalculatorWPF\\CalculatorWPF.csproj|d:\\sync\\c# code\\projects\\calculator\\simple-calculator\\calculatorwpf\\calculatorwpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{85819FE9-4ADB-44BA-915A-D81AF16951C1}|CalculatorWPF\\CalculatorWPF.csproj|solutionrelative:calculatorwpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{85819FE9-4ADB-44BA-915A-D81AF16951C1}|CalculatorWPF\\CalculatorWPF.csproj|d:\\dsfsdfsdf\\calculatorwpf\\calculatorwpf\\calculator_logic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85819FE9-4ADB-44BA-915A-D81AF16951C1}|CalculatorWPF\\CalculatorWPF.csproj|solutionrelative:calculatorwpf\\calculator_logic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{85819FE9-4ADB-44BA-915A-D81AF16951C1}|CalculatorWPF\\CalculatorWPF.csproj|d:\\sync\\c# code\\projects\\calculator\\simple-calculator\\calculatorwpf\\calculatorwpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{85819FE9-4ADB-44BA-915A-D81AF16951C1}|CalculatorWPF\\CalculatorWPF.csproj|solutionrelative:calculatorwpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85819FE9-4ADB-44BA-915A-D81AF16951C1}|CalculatorWPF\\CalculatorWPF.csproj|d:\\sync\\c# code\\projects\\calculator\\simple-calculator\\calculatorwpf\\calculatorwpf\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85819FE9-4ADB-44BA-915A-D81AF16951C1}|CalculatorWPF\\CalculatorWPF.csproj|solutionrelative:calculatorwpf\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85819FE9-4ADB-44BA-915A-D81AF16951C1}|CalculatorWPF\\CalculatorWPF.csproj|d:\\sync\\c# code\\projects\\calculator\\simple-calculator\\calculatorwpf\\calculatorwpf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{85819FE9-4ADB-44BA-915A-D81AF16951C1}|CalculatorWPF\\CalculatorWPF.csproj|solutionrelative:calculatorwpf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,33 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "App.xaml",
-              "DocumentMoniker": "D:\\dsfsdfsdf\\CalculatorWPF\\CalculatorWPF\\App.xaml",
-              "RelativeDocumentMoniker": "CalculatorWPF\\App.xaml",
-              "ToolTip": "D:\\dsfsdfsdf\\CalculatorWPF\\CalculatorWPF\\App.xaml",
-              "RelativeToolTip": "CalculatorWPF\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-10T15:06:50.999Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CalculatorWPF",
-              "DocumentMoniker": "D:\\dsfsdfsdf\\CalculatorWPF\\CalculatorWPF\\CalculatorWPF.csproj",
-              "RelativeDocumentMoniker": "CalculatorWPF\\CalculatorWPF.csproj",
-              "ToolTip": "D:\\dsfsdfsdf\\CalculatorWPF\\CalculatorWPF\\CalculatorWPF.csproj",
-              "RelativeToolTip": "CalculatorWPF\\CalculatorWPF.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-10T15:07:49.627Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
@@ -72,36 +39,34 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "D:\\dsfsdfsdf\\CalculatorWPF\\CalculatorWPF\\AssemblyInfo.cs",
-              "RelativeDocumentMoniker": "CalculatorWPF\\AssemblyInfo.cs",
-              "ToolTip": "D:\\dsfsdfsdf\\CalculatorWPF\\CalculatorWPF\\AssemblyInfo.cs",
-              "RelativeToolTip": "CalculatorWPF\\AssemblyInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T15:07:15.532Z",
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\Sync\\C# code\\PROJECTS\\Calculator\\Simple-Calculator\\CalculatorWPF\\CalculatorWPF\\App.xaml",
+              "RelativeDocumentMoniker": "CalculatorWPF\\App.xaml",
+              "ToolTip": "D:\\Sync\\C# code\\PROJECTS\\Calculator\\Simple-Calculator\\CalculatorWPF\\CalculatorWPF\\App.xaml",
+              "RelativeToolTip": "CalculatorWPF\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-10T15:06:50.999Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Calculator_logic.cs",
-              "DocumentMoniker": "D:\\dsfsdfsdf\\CalculatorWPF\\CalculatorWPF\\Calculator_logic.cs",
-              "RelativeDocumentMoniker": "CalculatorWPF\\Calculator_logic.cs",
-              "ToolTip": "D:\\dsfsdfsdf\\CalculatorWPF\\CalculatorWPF\\Calculator_logic.cs",
-              "RelativeToolTip": "CalculatorWPF\\Calculator_logic.cs",
+              "DocumentIndex": 2,
+              "Title": "Calculator.cs",
+              "DocumentMoniker": "D:\\Sync\\C# code\\PROJECTS\\Calculator\\Simple-Calculator\\CalculatorWPF\\CalculatorWPF\\Calculator.cs",
+              "RelativeDocumentMoniker": "CalculatorWPF\\Calculator.cs",
+              "ToolTip": "D:\\Sync\\C# code\\PROJECTS\\Calculator\\Simple-Calculator\\CalculatorWPF\\CalculatorWPF\\Calculator.cs",
+              "RelativeToolTip": "CalculatorWPF\\Calculator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T15:05:02.709Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-10T15:05:02.709Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "D:\\dsfsdfsdf\\CalculatorWPF\\CalculatorWPF\\MainWindow.xaml",
+              "DocumentMoniker": "D:\\Sync\\C# code\\PROJECTS\\Calculator\\Simple-Calculator\\CalculatorWPF\\CalculatorWPF\\MainWindow.xaml",
               "RelativeDocumentMoniker": "CalculatorWPF\\MainWindow.xaml",
-              "ToolTip": "D:\\dsfsdfsdf\\CalculatorWPF\\CalculatorWPF\\MainWindow.xaml",
+              "ToolTip": "D:\\Sync\\C# code\\PROJECTS\\Calculator\\Simple-Calculator\\CalculatorWPF\\CalculatorWPF\\MainWindow.xaml",
               "RelativeToolTip": "CalculatorWPF\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-02-10T15:01:56.397Z",
@@ -109,13 +74,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "D:\\dsfsdfsdf\\CalculatorWPF\\CalculatorWPF\\MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Sync\\C# code\\PROJECTS\\Calculator\\Simple-Calculator\\CalculatorWPF\\CalculatorWPF\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "CalculatorWPF\\MainWindow.xaml.cs",
-              "ToolTip": "D:\\dsfsdfsdf\\CalculatorWPF\\CalculatorWPF\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\Sync\\C# code\\PROJECTS\\Calculator\\Simple-Calculator\\CalculatorWPF\\CalculatorWPF\\MainWindow.xaml.cs",
               "RelativeToolTip": "CalculatorWPF\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAmwBoAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAYwBIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-10T15:01:52.848Z",
               "EditorCaption": ""
