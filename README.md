@@ -5,7 +5,7 @@ A Clean GUI Calculator with Minimal Features for Windows
 </p>
 
 
-## Requirements
+## 🛠 Requirements
 
 - Windows 7 or later
 - .NET v6
@@ -24,6 +24,6 @@ A Clean GUI Calculator with Minimal Features for Windows
   <img src="CalculatorWPF/CalculatorWPF/Screenshots/wide.png" />
 </p>
 
-## Contributing
+## Contributing :hearts:
 
 Contributions are always welcome!
