@@ -1,7 +1,7 @@
 # Simple Calculator 
 A Clean GUI Calculator with Minimal Features for Windows
 <p align="center">
-  <img src="CalculatorWPF/CalculatorWPF/icon.png" width="300"/>
+  <img src="CalculatorWPF/CalculatorWPF/icon.png" width="240"/>
 </p>
 
 
