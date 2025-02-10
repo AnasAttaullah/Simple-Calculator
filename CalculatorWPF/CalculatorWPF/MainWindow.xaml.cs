@@ -20,6 +20,7 @@ namespace CalculatorWPF
     public partial class MainWindow : Window
     {
         string primary_input = "";
+        public bool digitInputAllowed = true;
         public string not_allowed = "+-x/%.";
 
         public MainWindow()
@@ -46,9 +47,12 @@ namespace CalculatorWPF
         //Display Numbers to the primary screen
         public void Display(string digit)
         {
-            primary_input += digit;
-            Primary_display.Clear();
-            this.Primary_display.Text += primary_input;
+            if (digitInputAllowed)
+            {
+                primary_input += digit;
+                Primary_display.Clear();
+                Primary_display.Text += primary_input;
+            }
         }
 
         // Method to check and evaluate 
@@ -57,6 +61,7 @@ namespace CalculatorWPF
             if (Check_last())
             {
                 primary_input += op;
+                digitInputAllowed = true;
                 Primary_display.Clear();
                 Secondary_display.Clear();
                 Calculator.Parser(primary_input);
@@ -100,6 +105,7 @@ namespace CalculatorWPF
                 Primary_display.Text += Calculator.Values[0].ToString();
                 primary_input = Calculator.Values[0].ToString();
                 Calculator.Values.Clear();
+                digitInputAllowed = false;
             }
         }
 
@@ -110,20 +116,25 @@ namespace CalculatorWPF
         {
             Primary_display.Clear();
             Secondary_display.Clear();
+            digitInputAllowed = true;
             primary_input = "";
             Calculator.Values.Clear();
         }
         private void Del_buttonClicked(object sender, RoutedEventArgs e)
         {
-            if (!string.IsNullOrEmpty(primary_input) && primary_input.Length > 1)
+            if (digitInputAllowed)
             {
-                primary_input = primary_input.Substring(0, primary_input.Length - 1);
+
+                if (!string.IsNullOrEmpty(primary_input) && primary_input.Length > 1)
+                {
+                    primary_input = primary_input.Substring(0, primary_input.Length - 1);
+                }
+                else
+                {
+                    primary_input = "";
+                }
+                this.Primary_display.Text = primary_input;
             }
-            else
-            {
-                primary_input = "";
-            }
-            this.Primary_display.Text = primary_input;
         }
 
         private void Percent_buttonClicked(object sender, RoutedEventArgs e)
@@ -225,11 +236,17 @@ namespace CalculatorWPF
             // Handling numeric input (0-9), exception of 5 and 8
             if ((e.Key >= Key.D0 && e.Key <= Key.D4) || (e.Key >= Key.D6 && e.Key <= Key.D7) || (e.Key == Key.D9))
             {
-                primary_input += (e.Key - Key.D0).ToString();
+                if (digitInputAllowed)
+                {
+                    primary_input += (e.Key - Key.D0).ToString();
+                }
             }
             else if (e.Key >= Key.NumPad0 && e.Key <= Key.NumPad9)
             {
-                primary_input += (e.Key - Key.NumPad0).ToString();
+                if (digitInputAllowed)
+                {
+                    primary_input += (e.Key - Key.NumPad0).ToString();
+                }
             }
             // Handling the '%' operator (Shift + 5)
             else if (e.Key == Key.D5 && (Keyboard.Modifiers & ModifierKeys.Shift) == ModifierKeys.Shift)
@@ -245,7 +262,10 @@ namespace CalculatorWPF
             // Handling '5' when Shift is NOT pressed
             else if (e.Key == Key.D5)
             {
-                primary_input += "5";
+                if (digitInputAllowed)
+                {
+                    primary_input += "5";
+                }
                 e.Handled = true;
             }
             // Handling division
@@ -263,7 +283,10 @@ namespace CalculatorWPF
             }
             else if (e.Key == Key.D8)
             {
-                primary_input += "8";
+                if (digitInputAllowed)
+                {
+                    primary_input += "8";
+                }
                 e.Handled = true;
             }
             else if ((e.Key == Key.Multiply || e.Key == Key.X))
@@ -286,15 +309,17 @@ namespace CalculatorWPF
             // Handling clearing
             else if (e.Key == Key.Escape || e.Key == Key.OemClear)
             {
-                primary_input = "";
+                Primary_display.Clear();
                 Secondary_display.Clear();
+                digitInputAllowed = true;
+                primary_input = "";
                 Calculator.Values.Clear();
                 e.Handled = true;
             }
             // Handling backspace
             else if (e.Key == Key.Back)
             {
-                if (!string.IsNullOrEmpty(primary_input))
+                if (!string.IsNullOrEmpty(primary_input) && digitInputAllowed)
                 {
                     primary_input = primary_input.Substring(0, primary_input.Length - 1);
                 }

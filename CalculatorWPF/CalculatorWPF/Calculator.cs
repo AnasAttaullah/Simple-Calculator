@@ -14,7 +14,6 @@ namespace CalculatorWPF
         public static List<Double> Values = new List<Double>();
         public static Nullable<Char> Op;
         public static List<char> op_list = new List<char> { '+', '-', 'x', '/' };
-
         private static double result = 0;
 
         private static bool Percentage_status = false;
@@ -69,7 +68,6 @@ namespace CalculatorWPF
                 if (Percentage_status)
                 {
                     Values[1] = (Values[0] * Values[1]) / 100;
-                    //Percentage_status = false;
                 }
 
                 switch (Op)
