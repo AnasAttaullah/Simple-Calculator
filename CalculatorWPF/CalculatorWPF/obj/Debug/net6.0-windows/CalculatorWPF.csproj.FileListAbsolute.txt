@@ -39,3 +39,4 @@ D:\Sync\C# code\PROJECTS\Calculator\Simple-Calculator\CalculatorWPF\CalculatorWP
 D:\Sync\C# code\PROJECTS\Calculator\Simple-Calculator\CalculatorWPF\CalculatorWPF\obj\Debug\net6.0-windows\CalculatorWPF.sourcelink.json
 D:\Sync\C# code\PROJECTS\Calculator\Simple-Calculator\CalculatorWPF\CalculatorWPF\obj\Debug\net6.0-windows\CalculatorWPF.genruntimeconfig.cache
 D:\Sync\C# code\PROJECTS\Calculator\Simple-Calculator\CalculatorWPF\CalculatorWPF\obj\Debug\net6.0-windows\ref\CalculatorWPF.dll
+D:\Sync\C# code\PROJECTS\Calculator\Simple-Calculator\CalculatorWPF\CalculatorWPF\obj\Debug\net6.0-windows\CalculatorWPF_Content.g.cs

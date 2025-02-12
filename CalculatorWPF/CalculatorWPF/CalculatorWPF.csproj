@@ -6,6 +6,7 @@
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<UseWPF>true</UseWPF>
+		<ApplicationIcon>icon.ico</ApplicationIcon>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -14,6 +15,18 @@
 
 	<ItemGroup>
 		<Resource Include="icon.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<EditorConfigFiles Remove="D:\Sync\C# code\PROJECTS\Calculator\Simple-Calculator\CalculatorWPF\CalculatorWPF\.editorconfig" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="icon.ico" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="D:\Sync\C# code\PROJECTS\Calculator\Simple-Calculator\CalculatorWPF\CalculatorWPF\.editorconfig" />
 	</ItemGroup>
 
 </Project>

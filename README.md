@@ -8,6 +8,7 @@ A Clean GUI Calculator with Minimal Features for Windows. Download from the Late
 ## 🛠 Requirements
 
 - Windows 7 or later
+- x86 or x64 cpu
 - .NET Runtime v6
 
 ## 🧐 Features
