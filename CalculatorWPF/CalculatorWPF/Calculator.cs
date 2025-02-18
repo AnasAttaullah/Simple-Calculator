@@ -9,17 +9,20 @@ using System.Windows;
 
 namespace CalculatorWPF
 {
-    public class Calculator
+    public static class Calculator
     {
+        // Global Variables 
         public static List<Double> Values = new List<Double>();
-        public static Nullable<Char> Op;
-        public static List<char> op_list = new List<char> { '+', '-', 'x', '/' };
+        public static List<string> Op = new List<string>();
+        private static readonly List<char> op_list = new List<char> { '+', '-', 'x', '/' };
+        private static bool Percentage_status = false;
         private static double result = 0;
 
-        private static bool Percentage_status = false;
 
-
+        // ======================
         // String Parsing Method
+        // ======================
+
         public static void Parser(string input)
         {
             string current_number = "";
@@ -32,7 +35,7 @@ namespace CalculatorWPF
                 }
                 else if (op_list.Contains(c))
                 {
-                    Op = c;
+                    Op.Add(c.ToString());
                 }
                 else if (c.Equals('%'))
                 {
@@ -43,6 +46,7 @@ namespace CalculatorWPF
                 }
             }
 
+            // Validate and store the number
             if (IsValidNumber(current_number))
             {
                 Values.Add(double.Parse(current_number));
@@ -51,6 +55,7 @@ namespace CalculatorWPF
             {
                 MessageBox.Show("Number contains more than one decimal point", "Invalid Input", MessageBoxButton.OK, MessageBoxImage.Error);
             }
+
             current_number = "";
         }
         // Check if the number has 0 or 1 decimal points
@@ -59,30 +64,33 @@ namespace CalculatorWPF
             return number.Count(c => c == '.') <= 1;
         }
 
+        // ==================
         // Evaluation Method
+        // ==================
+
         public static void Evaluate()
         {
             if (Values.Count == 2)
             {
-
+                // If percentage is applied, convert the second value into percentage of the first value
                 if (Percentage_status)
                 {
                     Values[1] = (Values[0] * Values[1]) / 100;
                 }
 
-                switch (Op)
+                // Perform the calculation based on the first operator
+                switch (Op[0])
                 {
-
-                    case '+':
+                    case "+":
                         result = Values[0] + Values[1];
                         break;
-                    case '-':
+                    case "-":
                         result = Values[0] - Values[1];
                         break;
-                    case 'x':
+                    case "x":
                         result = Values[0] * Values[1];
                         break;
-                    case '/':
+                    case "/":
                         if (Values[1] == 0)
                         {
                             MessageBox.Show("Division by zero is not allowed", "Invalid Input", MessageBoxButton.OK, MessageBoxImage.Error);
@@ -97,14 +105,22 @@ namespace CalculatorWPF
                         result = double.NaN;
                         break;
                 }
+                result = Math.Round(result, 3);
+
+                // Remove the Operator from stack after evaluation
                 if (Percentage_status)
                 {
-                    Op = null;
+                    Op.Clear();
                     Percentage_status = false;
+                }
+                else
+                {
+                    Op.RemoveAt(0);
                 }
 
                 Values.Clear();
                 Values.Add(result);
+
             }
         }
     }

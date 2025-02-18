@@ -28,8 +28,11 @@ namespace CalculatorWPF
             InitializeComponent();
 
         }
+        // ========
+        // METHODS 
+        // ========
 
-        // Method to check the last entry is not the same operator
+        // Method to check the last entry is not the same (operator)
         public bool Check_last()
         {
             char value_to_compare = 'z';
@@ -71,9 +74,9 @@ namespace CalculatorWPF
                 {
                     Calculator.Evaluate();
                 }
-                if (Calculator.Values.Count > 0)
+                if (Calculator.Values.Count > 0 && Calculator.Op.Count >= 1)
                 {
-                    Secondary_display.Text = $"{Calculator.Values[0]} {Calculator.Op}";
+                    Secondary_display.Text = $"{Calculator.Values[0]} {Calculator.Op[0]}";
                 }
                 if (op == "%")
                 {
@@ -109,8 +112,9 @@ namespace CalculatorWPF
             }
         }
 
-
-        // HANDLING THE BUTTON INPUTS
+        // =====================
+        // HANDLING MOUSE INPUTS
+        // =====================
 
         private void Clear_buttonClicked(object sender, RoutedEventArgs e)
         {
@@ -119,6 +123,7 @@ namespace CalculatorWPF
             digitInputAllowed = true;
             primary_input = "";
             Calculator.Values.Clear();
+            Calculator.Op.Clear();
         }
         private void Del_buttonClicked(object sender, RoutedEventArgs e)
         {
@@ -230,7 +235,10 @@ namespace CalculatorWPF
             }
         }
 
-        // KEYBOARD INPUT HANDLING
+        // ========================
+        // HANDLING KEYBOARD INPUT
+        // ========================
+
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
             // Handling numeric input (0-9), exception of 5 and 8
@@ -272,7 +280,7 @@ namespace CalculatorWPF
             else if ((e.Key == Key.Divide || e.Key == Key.OemQuestion))
             {
                 DisplayAndEvaluate("/");
-                e.Handled = true; // Prevent default behavior
+                e.Handled = true;
             }
             // Handling multiplication (Shift + 8 or Multiply key)
             else if (e.Key == Key.D8 && (Keyboard.Modifiers & ModifierKeys.Shift) == ModifierKeys.Shift)
@@ -314,6 +322,7 @@ namespace CalculatorWPF
                 digitInputAllowed = true;
                 primary_input = "";
                 Calculator.Values.Clear();
+                Calculator.Op.Clear();
                 e.Handled = true;
             }
             // Handling backspace
@@ -342,17 +351,18 @@ namespace CalculatorWPF
             Primary_display.Text = primary_input;
         }
 
+        // =======================
         // Source Code link button
+        // =======================
+
         private void Code_linkButtonClicked(object sender, MouseButtonEventArgs e)
         {
-            // Your predefined link
             string url = "https://github.com/AnasAttaullah/Simple-Calculator";
-
             // Open the URL in the default web browser
             System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
             {
                 FileName = url,
-                UseShellExecute = true // Ensures it opens in the default browser
+                UseShellExecute = true
             });
         }
 
