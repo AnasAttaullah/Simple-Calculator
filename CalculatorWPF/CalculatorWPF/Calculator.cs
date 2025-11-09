@@ -25,13 +25,13 @@ namespace CalculatorWPF
 
         public static void Parser(string input)
         {
-            string current_number = "";
+            string currentNumber = "";
 
             foreach (char c in input.ToArray())
             {
                 if (char.IsDigit(c) || c == '.')
                 {
-                    current_number += c;
+                    currentNumber += c;
                 }
                 else if (op_list.Contains(c))
                 {
@@ -46,22 +46,7 @@ namespace CalculatorWPF
                 }
             }
 
-            // Validate and store the number
-            if (IsValidNumber(current_number))
-            {
-                Values.Add(double.Parse(current_number));
-            }
-            else
-            {
-                MessageBox.Show("Number contains more than one decimal point", "Invalid Input", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-
-            current_number = "";
-        }
-        // Check if the number has 0 or 1 decimal points
-        private static bool IsValidNumber(string number)
-        {
-            return number.Count(c => c == '.') <= 1;
+            Values.Add(double.Parse(currentNumber));
         }
 
         // ==================
@@ -94,7 +79,7 @@ namespace CalculatorWPF
                         if (Values[1] == 0)
                         {
                             MessageBox.Show("Division by zero is not allowed", "Invalid Input", MessageBoxButton.OK, MessageBoxImage.Error);
-                            result = 0;
+                            result = Values[0];
                         }
                         else
                         {

@@ -15,7 +15,7 @@ A Clean GUI Calculator with Minimal Features for Windows
 
 - Responsive Layout
 - Keyboard Support
-- Easy to Use
+- Input Validation
   
 ## Screenshots
 <p align="center">
